@@ -1,0 +1,512 @@
+case 0x0:unimp()//NOP
+	//cpu.PC+=1
+	case 0x1:unimp()//LXI B,D16
+	//cpu.PC+=1
+	case 0x2:unimp()//STAX B
+	//cpu.PC+=1
+	case 0x3:unimp()//INX B
+	//cpu.PC+=1
+	case 0x4:unimp()//INR B
+	//cpu.PC+=1
+	case 0x5:unimp()//DCR B
+	//cpu.PC+=1
+	case 0x6:unimp()//MVI B, D8
+	//cpu.PC+=1
+	case 0x7:unimp()//RLC
+	//cpu.PC+=1
+	case 0x8:unimp()//-
+	//cpu.PC+=1
+	case 0x9:unimp()//DAD B
+	//cpu.PC+=1
+	case 0xa:unimp()//LDAX B
+	//cpu.PC+=1
+	case 0xb:unimp()//DCX B
+	//cpu.PC+=1
+	case 0xc:unimp()//INR C
+	//cpu.PC+=1
+	case 0xd:unimp()//DCR C
+	//cpu.PC+=1
+	case 0xe:unimp()//MVI C,D8
+	//cpu.PC+=1
+	case 0xf:unimp()//RRC
+	//cpu.PC+=1
+	case 0x10:unimp()//-
+	//cpu.PC+=1
+	case 0x11:unimp()//LXI D,D16
+	//cpu.PC+=1
+	case 0x12:unimp()//STAX D
+	//cpu.PC+=1
+	case 0x13:unimp()//INX D
+	//cpu.PC+=1
+	case 0x14:unimp()//INR D
+	//cpu.PC+=1
+	case 0x15:unimp()//DCR D
+	//cpu.PC+=1
+	case 0x16:unimp()//MVI D, D8
+	//cpu.PC+=1
+	case 0x17:unimp()//RAL
+	//cpu.PC+=1
+	case 0x18:unimp()//-
+	//cpu.PC+=1
+	case 0x19:unimp()//DAD D
+	//cpu.PC+=1
+	case 0x1a:unimp()//LDAX D
+	//cpu.PC+=1
+	case 0x1b:unimp()//DCX D
+	//cpu.PC+=1
+	case 0x1c:unimp()//INR E
+	//cpu.PC+=1
+	case 0x1d:unimp()//DCR E
+	//cpu.PC+=1
+	case 0x1e:unimp()//MVI E,D8
+	//cpu.PC+=1
+	case 0x1f:unimp()//RAR
+	//cpu.PC+=1
+	case 0x20:unimp()//-
+	//cpu.PC+=1
+	case 0x21:unimp()//LXI H,D16
+	//cpu.PC+=1
+	case 0x22:unimp()//SHLD adr
+	//cpu.PC+=1
+	case 0x23:unimp()//INX H
+	//cpu.PC+=1
+	case 0x24:unimp()//INR H
+	//cpu.PC+=1
+	case 0x25:unimp()//DCR H
+	//cpu.PC+=1
+	case 0x26:unimp()//MVI H,D8
+	//cpu.PC+=1
+	case 0x27:unimp()//DAA
+	//cpu.PC+=1
+	case 0x28:unimp()//-
+	//cpu.PC+=1
+	case 0x29:unimp()//DAD H
+	//cpu.PC+=1
+	case 0x2a:unimp()//LHLD adr
+	//cpu.PC+=1
+	case 0x2b:unimp()//DCX H
+	//cpu.PC+=1
+	case 0x2c:unimp()//INR L
+	//cpu.PC+=1
+	case 0x2d:unimp()//DCR L
+	//cpu.PC+=1
+	case 0x2e:unimp()//MVI L, D8
+	//cpu.PC+=1
+	case 0x2f:unimp()//CMA
+	//cpu.PC+=1
+	case 0x30:unimp()//-
+	//cpu.PC+=1
+	case 0x31:unimp()//LXI SP, D16
+	//cpu.PC+=1
+	case 0x32:unimp()//STA adr
+	//cpu.PC+=1
+	case 0x33:unimp()//INX SP
+	//cpu.PC+=1
+	case 0x34:unimp()//INR M
+	//cpu.PC+=1
+	case 0x35:unimp()//DCR M
+	//cpu.PC+=1
+	case 0x36:unimp()//MVI M,D8
+	//cpu.PC+=1
+	case 0x37:unimp()//STC
+	//cpu.PC+=1
+	case 0x38:unimp()//-
+	//cpu.PC+=1
+	case 0x39:unimp()//DAD SP
+	//cpu.PC+=1
+	case 0x3a:unimp()//LDA adr
+	//cpu.PC+=1
+	case 0x3b:unimp()//DCX SP
+	//cpu.PC+=1
+	case 0x3c:unimp()//INR A
+	//cpu.PC+=1
+	case 0x3d:unimp()//DCR A
+	//cpu.PC+=1
+	case 0x3e:unimp()//MVI A,D8
+	//cpu.PC+=1
+	case 0x3f:unimp()//CMC
+	//cpu.PC+=1
+	case 0x40:unimp()//MOV B,B
+	//cpu.PC+=1
+	case 0x41:unimp()//MOV B,C
+	//cpu.PC+=1
+	case 0x42:unimp()//MOV B,D
+	//cpu.PC+=1
+	case 0x43:unimp()//MOV B,E
+	//cpu.PC+=1
+	case 0x44:unimp()//MOV B,H
+	//cpu.PC+=1
+	case 0x45:unimp()//MOV B,L
+	//cpu.PC+=1
+	case 0x46:unimp()//MOV B,M
+	//cpu.PC+=1
+	case 0x47:unimp()//MOV B,A
+	//cpu.PC+=1
+	case 0x48:unimp()//MOV C,B
+	//cpu.PC+=1
+	case 0x49:unimp()//MOV C,C
+	//cpu.PC+=1
+	case 0x4a:unimp()//MOV C,D
+	//cpu.PC+=1
+	case 0x4b:unimp()//MOV C,E
+	//cpu.PC+=1
+	case 0x4c:unimp()//MOV C,H
+	//cpu.PC+=1
+	case 0x4d:unimp()//MOV C,L
+	//cpu.PC+=1
+	case 0x4e:unimp()//MOV C,M
+	//cpu.PC+=1
+	case 0x4f:unimp()//MOV C,A
+	//cpu.PC+=1
+	case 0x50:unimp()//MOV D,B
+	//cpu.PC+=1
+	case 0x51:unimp()//MOV D,C
+	//cpu.PC+=1
+	case 0x52:unimp()//MOV D,D
+	//cpu.PC+=1
+	case 0x53:unimp()//MOV D,E
+	//cpu.PC+=1
+	case 0x54:unimp()//MOV D,H
+	//cpu.PC+=1
+	case 0x55:unimp()//MOV D,L
+	//cpu.PC+=1
+	case 0x56:unimp()//MOV D,M
+	//cpu.PC+=1
+	case 0x57:unimp()//MOV D,A
+	//cpu.PC+=1
+	case 0x58:unimp()//MOV E,B
+	//cpu.PC+=1
+	case 0x59:unimp()//MOV E,C
+	//cpu.PC+=1
+	case 0x5a:unimp()//MOV E,D
+	//cpu.PC+=1
+	case 0x5b:unimp()//MOV E,E
+	//cpu.PC+=1
+	case 0x5c:unimp()//MOV E,H
+	//cpu.PC+=1
+	case 0x5d:unimp()//MOV E,L
+	//cpu.PC+=1
+	case 0x5e:unimp()//MOV E,M
+	//cpu.PC+=1
+	case 0x5f:unimp()//MOV E,A
+	//cpu.PC+=1
+	case 0x60:unimp()//MOV H,B
+	//cpu.PC+=1
+	case 0x61:unimp()//MOV H,C
+	//cpu.PC+=1
+	case 0x62:unimp()//MOV H,D
+	//cpu.PC+=1
+	case 0x63:unimp()//MOV H,E
+	//cpu.PC+=1
+	case 0x64:unimp()//MOV H,H
+	//cpu.PC+=1
+	case 0x65:unimp()//MOV H,L
+	//cpu.PC+=1
+	case 0x66:unimp()//MOV H,M
+	//cpu.PC+=1
+	case 0x67:unimp()//MOV H,A
+	//cpu.PC+=1
+	case 0x68:unimp()//MOV L,B
+	//cpu.PC+=1
+	case 0x69:unimp()//MOV L,C
+	//cpu.PC+=1
+	case 0x6a:unimp()//MOV L,D
+	//cpu.PC+=1
+	case 0x6b:unimp()//MOV L,E
+	//cpu.PC+=1
+	case 0x6c:unimp()//MOV L,H
+	//cpu.PC+=1
+	case 0x6d:unimp()//MOV L,L
+	//cpu.PC+=1
+	case 0x6e:unimp()//MOV L,M
+	//cpu.PC+=1
+	case 0x6f:unimp()//MOV L,A
+	//cpu.PC+=1
+	case 0x70:unimp()//MOV M,B
+	//cpu.PC+=1
+	case 0x71:unimp()//MOV M,C
+	//cpu.PC+=1
+	case 0x72:unimp()//MOV M,D
+	//cpu.PC+=1
+	case 0x73:unimp()//MOV M,E
+	//cpu.PC+=1
+	case 0x74:unimp()//MOV M,H
+	//cpu.PC+=1
+	case 0x75:unimp()//MOV M,L
+	//cpu.PC+=1
+	case 0x76:unimp()//HLT
+	//cpu.PC+=1
+	case 0x77:unimp()//MOV M,A
+	//cpu.PC+=1
+	case 0x78:unimp()//MOV A,B
+	//cpu.PC+=1
+	case 0x79:unimp()//MOV A,C
+	//cpu.PC+=1
+	case 0x7a:unimp()//MOV A,D
+	//cpu.PC+=1
+	case 0x7b:unimp()//MOV A,E
+	//cpu.PC+=1
+	case 0x7c:unimp()//MOV A,H
+	//cpu.PC+=1
+	case 0x7d:unimp()//MOV A,L
+	//cpu.PC+=1
+	case 0x7e:unimp()//MOV A,M
+	//cpu.PC+=1
+	case 0x7f:unimp()//MOV A,A
+	//cpu.PC+=1
+	case 0x80:unimp()//ADD B
+	//cpu.PC+=1
+	case 0x81:unimp()//ADD C
+	//cpu.PC+=1
+	case 0x82:unimp()//ADD D
+	//cpu.PC+=1
+	case 0x83:unimp()//ADD E
+	//cpu.PC+=1
+	case 0x84:unimp()//ADD H
+	//cpu.PC+=1
+	case 0x85:unimp()//ADD L
+	//cpu.PC+=1
+	case 0x86:unimp()//ADD M
+	//cpu.PC+=1
+	case 0x87:unimp()//ADD A
+	//cpu.PC+=1
+	case 0x88:unimp()//ADC B
+	//cpu.PC+=1
+	case 0x89:unimp()//ADC C
+	//cpu.PC+=1
+	case 0x8a:unimp()//ADC D
+	//cpu.PC+=1
+	case 0x8b:unimp()//ADC E
+	//cpu.PC+=1
+	case 0x8c:unimp()//ADC H
+	//cpu.PC+=1
+	case 0x8d:unimp()//ADC L
+	//cpu.PC+=1
+	case 0x8e:unimp()//ADC M
+	//cpu.PC+=1
+	case 0x8f:unimp()//ADC A
+	//cpu.PC+=1
+	case 0x90:unimp()//SUB B
+	//cpu.PC+=1
+	case 0x91:unimp()//SUB C
+	//cpu.PC+=1
+	case 0x92:unimp()//SUB D
+	//cpu.PC+=1
+	case 0x93:unimp()//SUB E
+	//cpu.PC+=1
+	case 0x94:unimp()//SUB H
+	//cpu.PC+=1
+	case 0x95:unimp()//SUB L
+	//cpu.PC+=1
+	case 0x96:unimp()//SUB M
+	//cpu.PC+=1
+	case 0x97:unimp()//SUB A
+	//cpu.PC+=1
+	case 0x98:unimp()//SBB B
+	//cpu.PC+=1
+	case 0x99:unimp()//SBB C
+	//cpu.PC+=1
+	case 0x9a:unimp()//SBB D
+	//cpu.PC+=1
+	case 0x9b:unimp()//SBB E
+	//cpu.PC+=1
+	case 0x9c:unimp()//SBB H
+	//cpu.PC+=1
+	case 0x9d:unimp()//SBB L
+	//cpu.PC+=1
+	case 0x9e:unimp()//SBB M
+	//cpu.PC+=1
+	case 0x9f:unimp()//SBB A
+	//cpu.PC+=1
+	case 0xa0:unimp()//ANA B
+	//cpu.PC+=1
+	case 0xa1:unimp()//ANA C
+	//cpu.PC+=1
+	case 0xa2:unimp()//ANA D
+	//cpu.PC+=1
+	case 0xa3:unimp()//ANA E
+	//cpu.PC+=1
+	case 0xa4:unimp()//ANA H
+	//cpu.PC+=1
+	case 0xa5:unimp()//ANA L
+	//cpu.PC+=1
+	case 0xa6:unimp()//ANA M
+	//cpu.PC+=1
+	case 0xa7:unimp()//ANA A
+	//cpu.PC+=1
+	case 0xa8:unimp()//XRA B
+	//cpu.PC+=1
+	case 0xa9:unimp()//XRA C
+	//cpu.PC+=1
+	case 0xaa:unimp()//XRA D
+	//cpu.PC+=1
+	case 0xab:unimp()//XRA E
+	//cpu.PC+=1
+	case 0xac:unimp()//XRA H
+	//cpu.PC+=1
+	case 0xad:unimp()//XRA L
+	//cpu.PC+=1
+	case 0xae:unimp()//XRA M
+	//cpu.PC+=1
+	case 0xaf:unimp()//XRA A
+	//cpu.PC+=1
+	case 0xb0:unimp()//ORA B
+	//cpu.PC+=1
+	case 0xb1:unimp()//ORA C
+	//cpu.PC+=1
+	case 0xb2:unimp()//ORA D
+	//cpu.PC+=1
+	case 0xb3:unimp()//ORA E
+	//cpu.PC+=1
+	case 0xb4:unimp()//ORA H
+	//cpu.PC+=1
+	case 0xb5:unimp()//ORA L
+	//cpu.PC+=1
+	case 0xb6:unimp()//ORA M
+	//cpu.PC+=1
+	case 0xb7:unimp()//ORA A
+	//cpu.PC+=1
+	case 0xb8:unimp()//CMP B
+	//cpu.PC+=1
+	case 0xb9:unimp()//CMP C
+	//cpu.PC+=1
+	case 0xba:unimp()//CMP D
+	//cpu.PC+=1
+	case 0xbb:unimp()//CMP E
+	//cpu.PC+=1
+	case 0xbc:unimp()//CMP H
+	//cpu.PC+=1
+	case 0xbd:unimp()//CMP L
+	//cpu.PC+=1
+	case 0xbe:unimp()//CMP M
+	//cpu.PC+=1
+	case 0xbf:unimp()//CMP A
+	//cpu.PC+=1
+	case 0xc0:unimp()//RNZ
+	//cpu.PC+=1
+	case 0xc1:unimp()//POP B
+	//cpu.PC+=1
+	case 0xc2:unimp()//JNZ adr
+	//cpu.PC+=1
+	case 0xc3:unimp()//JMP adr
+	//cpu.PC+=1
+	case 0xc4:unimp()//CNZ adr
+	//cpu.PC+=1
+	case 0xc5:unimp()//PUSH B
+	//cpu.PC+=1
+	case 0xc6:unimp()//ADI D8
+	//cpu.PC+=1
+	case 0xc7:unimp()//RST 0
+	//cpu.PC+=1
+	case 0xc8:unimp()//RZ
+	//cpu.PC+=1
+	case 0xc9:unimp()//RET
+	//cpu.PC+=1
+	case 0xca:unimp()//JZ adr
+	//cpu.PC+=1
+	case 0xcb:unimp()//-
+	//cpu.PC+=1
+	case 0xcc:unimp()//CZ adr
+	//cpu.PC+=1
+	case 0xcd:unimp()//CALL adr
+	//cpu.PC+=1
+	case 0xce:unimp()//ACI D8
+	//cpu.PC+=1
+	case 0xcf:unimp()//RST 1
+	//cpu.PC+=1
+	case 0xd0:unimp()//RNC
+	//cpu.PC+=1
+	case 0xd1:unimp()//POP D
+	//cpu.PC+=1
+	case 0xd2:unimp()//JNC adr
+	//cpu.PC+=1
+	case 0xd3:unimp()//OUT D8
+	//cpu.PC+=1
+	case 0xd4:unimp()//CNC adr
+	//cpu.PC+=1
+	case 0xd5:unimp()//PUSH D
+	//cpu.PC+=1
+	case 0xd6:unimp()//SUI D8
+	//cpu.PC+=1
+	case 0xd7:unimp()//RST 2
+	//cpu.PC+=1
+	case 0xd8:unimp()//RC
+	//cpu.PC+=1
+	case 0xd9:unimp()//-
+	//cpu.PC+=1
+	case 0xda:unimp()//JC adr
+	//cpu.PC+=1
+	case 0xdb:unimp()//IN D8
+	//cpu.PC+=1
+	case 0xdc:unimp()//CC adr
+	//cpu.PC+=1
+	case 0xdd:unimp()//-
+	//cpu.PC+=1
+	case 0xde:unimp()//SBI D8
+	//cpu.PC+=1
+	case 0xdf:unimp()//RST 3
+	//cpu.PC+=1
+	case 0xe0:unimp()//RPO
+	//cpu.PC+=1
+	case 0xe1:unimp()//POP H
+	//cpu.PC+=1
+	case 0xe2:unimp()//JPO adr
+	//cpu.PC+=1
+	case 0xe3:unimp()//XTHL
+	//cpu.PC+=1
+	case 0xe4:unimp()//CPO adr
+	//cpu.PC+=1
+	case 0xe5:unimp()//PUSH H
+	//cpu.PC+=1
+	case 0xe6:unimp()//ANI D8
+	//cpu.PC+=1
+	case 0xe7:unimp()//RST 4
+	//cpu.PC+=1
+	case 0xe8:unimp()//RPE
+	//cpu.PC+=1
+	case 0xe9:unimp()//PCHL
+	//cpu.PC+=1
+	case 0xea:unimp()//JPE adr
+	//cpu.PC+=1
+	case 0xeb:unimp()//XCHG
+	//cpu.PC+=1
+	case 0xec:unimp()//CPE adr
+	//cpu.PC+=1
+	case 0xed:unimp()//-
+	//cpu.PC+=1
+	case 0xee:unimp()//XRI D8
+	//cpu.PC+=1
+	case 0xef:unimp()//RST 5
+	//cpu.PC+=1
+	case 0xf0:unimp()//RP
+	//cpu.PC+=1
+	case 0xf1:unimp()//POP PSW
+	//cpu.PC+=1
+	case 0xf2:unimp()//JP adr
+	//cpu.PC+=1
+	case 0xf3:unimp()//DI
+	//cpu.PC+=1
+	case 0xf4:unimp()//CP adr
+	//cpu.PC+=1
+	case 0xf5:unimp()//PUSH PSW
+	//cpu.PC+=1
+	case 0xf6:unimp()//ORI D8
+	//cpu.PC+=1
+	case 0xf7:unimp()//RST 6
+	//cpu.PC+=1
+	case 0xf8:unimp()//RM
+	//cpu.PC+=1
+	case 0xf9:unimp()//SPHL
+	//cpu.PC+=1
+	case 0xfa:unimp()//JM adr
+	//cpu.PC+=1
+	case 0xfb:unimp()//EI
+	//cpu.PC+=1
+	case 0xfc:unimp()//CM adr
+	//cpu.PC+=1
+	case 0xfd:unimp()//-
+	//cpu.PC+=1
+	case 0xfe:unimp()//CPI D8
+	//cpu.PC+=1
+	case 0xff:unimp()//RST 7
+	//cpu.PC+=1
